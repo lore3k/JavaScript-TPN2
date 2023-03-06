@@ -7,3 +7,17 @@ Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con u
 Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp
 
 */
+
+let resultado = "";
+
+do{
+    let cadena = prompt("Introducir una cadena");
+    if(resultado == ""){
+        resultado = resultado + cadena;
+    }
+    else{
+        resultado = resultado + "-" + cadena;
+    }
+}while(confirm("Desea seguir?"));
+
+document.write(resultado);
