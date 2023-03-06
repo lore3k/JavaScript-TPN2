@@ -12,3 +12,12 @@ la siguiente forma :
 …….
 
 */
+
+let i, repeat;
+    for (i = 1; i <= 30; i++) {
+        for (repeat = 0; repeat < i; repeat++) {
+            document.write(i);
+        }
+        document.write("<br>");
+    }
+    
